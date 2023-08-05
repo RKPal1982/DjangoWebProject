@@ -28,7 +28,7 @@ from django.http import HttpResponse
 
 
 
-#####-----------For Demo 3--------------------------####
+#####-----------For Demo 3 and 4--------------------------####
 from django.shortcuts import render   # Added for this step
 from datetime import datetime
 
@@ -47,5 +47,21 @@ def index(request):
     )
 
 
-#####-----------For Demo 3--------------------------####
+#####-----------For Demo 3 and 4--------------------------####
+##############################################################
+
+
+
+#####-----------For Demo 5--------------------------####
+def about(request):
+    return render(
+        request,
+        "HelloDjangoApp/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "About Us Page."
+        }
+    )
+
+#####-----------For Demo 5--------------------------####
 ########################################################
