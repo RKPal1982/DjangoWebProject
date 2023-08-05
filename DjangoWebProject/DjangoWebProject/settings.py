@@ -38,8 +38,8 @@ INSTALLED_APPS = [
 
     #####-----------For Demo 3--------------------------####
     'HelloDjangoApp',
-    #'APP_DIRS': True,
-
+    
+    
 
     # Add your apps here to enable them
     'django.contrib.admin',
@@ -47,9 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    
+    'django.contrib.staticfiles'    
 ]
 
 # Middleware framework
@@ -119,6 +117,12 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+ #####-----------For Demo 3--------------------------####
+APP_DIRS: True
+
+
+
+ #####-----------For Demo 4--------------------------####
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'

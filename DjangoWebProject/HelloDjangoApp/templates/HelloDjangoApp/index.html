@@ -1,9 +1,24 @@
-<html>
+<!--<html>
 <head>
     <title>{{ title }}</title>
 </head>
 <body>
     <h1>Welcome to PYTHON APP</h1>
     <strong>{{ message }}</strong>{{ content }}
+</body>
+</html>-->
+<!--#####-----------For Demo 4--------------------------####-->
+
+<html>
+<head>
+    <title>{{ title }}</title>
+
+    <!--<link rel="stylesheet" type="text/css" href="../../static/site.css" />-->
+    <!----------------------------OR-------------------------------------------->
+    {% load static %} <!-- Instruct Django to load static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
+<body>
+    <span class="message">{{ message }}</span>{{ content }}
 </body>
 </html>
