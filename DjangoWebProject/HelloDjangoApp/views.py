@@ -42,7 +42,8 @@ def index(request):
         {
             'title' : "Hello Django",
             'message' : "Hello Django!",
-            'content' : " on " + now.strftime("%A, %d %B, %Y at %X")
+            'content' : " on " + now.strftime("%A, %d %B, %Y at %X"),
+            'year':datetime.now().year,###demo 6
         }
     )
 
@@ -59,7 +60,8 @@ def about(request):
         "HelloDjangoApp/about.html",
         {
             'title' : "About HelloDjangoApp",
-            'content' : "About Us Page."
+            'content' : "About Us Page.",
+            'year':datetime.now().year,###demo 6
         }
     )
 
